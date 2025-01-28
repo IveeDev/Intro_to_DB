@@ -14,7 +14,7 @@ try:
         mycursor = connection.cursor()
         
         # Create database if it doesn't exist
-        mycursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_Store")
+        mycursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store")
         print("Database 'alx_book_store' created successfully!")
         
 except Error as err:
