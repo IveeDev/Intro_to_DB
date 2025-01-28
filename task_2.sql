@@ -1,4 +1,5 @@
---- Create the Authors table
+
+-- Create the Authors table
 CREATE TABLE IF NOT EXISTS Authors (
     author_id INT PRIMARY KEY AUTO_INCREMENT,
     author_name VARCHAR(215) NOT NULL
@@ -12,7 +13,7 @@ CREATE TABLE IF NOT EXISTS Books (
     title VARCHAR(130) NOT NULL,
     price DOUBLE NOT NULL,
     publication_date DATE,
-    FOREIGN KEY (author_id) REFERENCES Authors(authod_id)
+    FOREIGN KEY (author_id) REFERENCES Authors(author_id)
 );
 
 
